@@ -2,43 +2,41 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 
 
 function Input() {
+
+
+
+
   return (
-    <Container>
-    <Jumbotron>
-      <form>
-        <label>
-          Item  
-          <input type="text" name="item"/>
-        </label>
+<Container>
+<Form>
+  <Form.Group   controlId="Item">
+    <Form.Label>Item</Form.Label>
+    <Form.Control type="text" placeholder="Enter Item" />
+  </Form.Group>
   
-        <label>
-          Amount  
-          <input type="text" name="amount"/>
-        </label>
-        </form>
+  <Form.Group   controlId="Date">
+    <Form.Label>Date</Form.Label>
+    <Form.Control type="date" placeholder="Enter Date" />
+  </Form.Group>
+ 
+  <Form.Group   controlId="Type">
+    <Form.Label>Type</Form.Label>
+    <Form.Control type="text" placeholder="Enter Payment Type" />
+  </Form.Group>
 
-        <br></br>
+  <Form.Group   controlId="Amount">
+    <Form.Label>Cost</Form.Label>
+    <Form.Control type="number" placeholder="Enter Amount" />
+  </Form.Group>
 
-        <form>
-        <label>
-          Description  
-          <input type="text" name="description"/>
-        </label>
-
-        <label>
-          Location  
-          <input type="text" name="location"/>
-        </label>
-        <br></br>
-        <input type="submit" value="Submit" />
-      </form>
-
-      <hr></hr>
-    </Jumbotron>
-    </Container>
+</Form>
+</Container>
   );
 }
 
