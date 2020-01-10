@@ -1,9 +1,11 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Table from 'react-bootstrap/Table';
+import Container from 'react-bootstrap/Container';
 
 function Output() {
   return (
+    <Container>
       <Jumbotron>
       <Table responsive>
   <thead>
@@ -23,9 +25,38 @@ function Output() {
       <td>Table cell</td>
       <td>Table cell</td>
     </tr>
+    <tr>
+      <td>0</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
   </tbody>
 </Table>
       </Jumbotron>
+      </Container>
   );
 }
 

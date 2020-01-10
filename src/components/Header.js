@@ -1,11 +1,11 @@
 import React from 'react';
-//import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-//    <Container>
+   <Container>
       <Jumbotron>
       <header className="title">
       <Navbar bg="dark" variant="dark">
@@ -16,7 +16,7 @@ function Header() {
   </Navbar>
       </header>
       </Jumbotron>
-  //    </Container>
+     </Container>
   );
 }
 
