@@ -2,6 +2,7 @@ import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Output() {
   return (
