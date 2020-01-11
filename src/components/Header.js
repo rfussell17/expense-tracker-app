@@ -10,7 +10,6 @@ function Header() {
       <header className="title">
       <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="#home">
-{' '}
       Expense-Tracker
     </Navbar.Brand>
   </Navbar>
