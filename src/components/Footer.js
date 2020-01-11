@@ -1,13 +1,7 @@
-import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import React from "react";
 
 function Footer() {
-  return (
-
-      <footer className="footer">
-
-      </footer>
-  );
+  return <footer className="footer"></footer>;
 }
 
 export default Footer;

@@ -1,11 +1,10 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import Input from './components/Input'
-import Header from './components/Header'
-import Output from './components/Output'
-import Footer from './components/Footer'
-
+import Input from "./components/Input";
+import Header from "./components/Header";
+import Output from "./components/Output";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <Input />
       <Output />
       <Footer />
-
     </div>
   );
 }
