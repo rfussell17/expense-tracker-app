@@ -27,7 +27,7 @@ function Input() {
           <Form.Label>Cost</Form.Label>
           <Form.Control type="number" placeholder="Enter Amount" />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="dark" type="submit">
           Submit
         </Button>
       </Form>
