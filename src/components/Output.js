@@ -11,20 +11,20 @@ function Output() {
         <Table responsive>
           <thead>
             <tr>
-              <th>#</th>
-              <th>Item</th>
-              <th>Date</th>
-              <th>Type</th>
-              <th>Amount</th>
+              <th id="id">#</th>
+              <th id="Item">Item</th>
+              <th id="Date">Date</th>
+              <th id="Type">Type</th>
+              <th id="Amount">Amount</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>0</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
+              <td id="id">0</td>
+              <td id="Item">Table cell</td>
+              <td id="Date">Table cell</td>
+              <td id="Type">Table cell</td>
+              <td id="Amount">Table cell</td>
             </tr>
           </tbody>
         </Table>
