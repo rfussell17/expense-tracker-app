@@ -7,9 +7,26 @@ import Output from "./components/Output";
 import Footer from "./components/Footer";
 
 class App extends React.Component {
+
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      Id: "",
+      Item: "",
+      Date: "",
+      Type: "",
+      Amount: "",
+    };
+  }
+
+  handleChange = e => {
+    this.setState({
+      Id: e.target.value,
+      Item: e.target.value,
+      Date: e.target.value,
+      Type: e.target.value,
+      Amount: e.target.value
+    })
   }
 
   render() {
