@@ -28,6 +28,7 @@ function Input() {
 
         <Form.Group controlId="Type">
           <Form.Label>Type</Form.Label>
+          <br></br>
           <select>
             <option value="PayPal">PayPal</option>
             <option value="Credit">Credit</option>
