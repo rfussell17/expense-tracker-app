@@ -1,4 +1,3 @@
-
 const Item = [
   {
     Id: 1,
@@ -8,6 +7,6 @@ const Item = [
     Amount: "92.02",
     delete: true
   }
-]
+];
 
 export default Item;

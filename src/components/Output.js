@@ -27,21 +27,19 @@ function Output() {
               <td id="Date">01/21/2020</td>
               <td id="Type">Debit</td>
               <td id="Amount">$92.89</td>
-              <td><input id="delete"
-              input type="checkbox"
-              
-              /></td>
+              <td>
+                <input id="delete" input type="checkbox" />
+              </td>
             </tr>
             <tr>
-              <td>
-              </td>
+              <td></td>
             </tr>
           </tbody>
         </Table>
       </Jumbotron>
       <Button variant="dark" type="submit">
-          Delete
-        </Button>
+        Delete
+      </Button>
     </Container>
   );
 }
