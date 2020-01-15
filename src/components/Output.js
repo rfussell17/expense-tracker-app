@@ -23,9 +23,9 @@ function Output() {
           <tbody>
             <tr id="table">
               <td id="id">097</td>
-              <td id="Item">Midi Keyboard</td>
+              <td id="Item">MIDI Keyboard</td>
               <td id="Date">01/21/2020</td>
-              <td id="Type">Online</td>
+              <td id="Type">Debit</td>
               <td id="Amount">$92.89</td>
               <td><input id="delete"
               input type="checkbox"
