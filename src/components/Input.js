@@ -13,21 +13,25 @@ function Input() {
         <Form.Group controlId="Item">
           <Form.Label>Item</Form.Label>
           <Form.Control type="text" placeholder="Enter Item" />
+          <p></p>
         </Form.Group>
 
         <Form.Group controlId="Date">
           <Form.Label>Date</Form.Label>
           <Form.Control type="date" placeholder="Enter Date" />
+          <p></p>
         </Form.Group>
 
         <Form.Group controlId="Type">
           <Form.Label>Type</Form.Label>
           <Form.Control type="text" placeholder="Enter Payment Type" />
+          <p></p>
         </Form.Group>
 
         <Form.Group controlId="Amount">
           <Form.Label>Cost</Form.Label>
           <Form.Control type="text" placeholder="Enter Amount" />
+          <p></p>
         </Form.Group>
         <Button variant="dark" type="submit">
           Submit

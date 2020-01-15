@@ -29,6 +29,7 @@ function Output() {
               <td id="Amount">$92.89</td>
               <td><input id="delete"
               input type="checkbox"
+              
               /></td>
             </tr>
             <tr>

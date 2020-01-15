@@ -6,7 +6,17 @@ import Header from "./components/Header";
 import Output from "./components/Output";
 import Footer from "./components/Footer";
 
-function App() {
+class App extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+
+    }
+  }
+
+  render(){
+
+
   return (
     <div className="App">
       <Header />
@@ -15,6 +25,7 @@ function App() {
       <Footer />
     </div>
   );
+}
 }
 
 export default App;
