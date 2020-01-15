@@ -8,34 +8,34 @@ function Input() {
   return (
     <Container>
       <Form>
-        <Form.Group controlId="Item">
+        <Form.Group controlId="item">
           <Form.Label>Item</Form.Label>
           <Form.Control type="text" placeholder="Enter Item" />
           <p></p>
         </Form.Group>
 
-        <Form.Group controlId="Date">
+        <Form.Group controlId="date">
           <Form.Label>Date</Form.Label>
           <Form.Control type="date" placeholder="Enter Date" />
           <p></p>
         </Form.Group>
 
-        <Form.Group controlId="Amount">
+        <Form.Group controlId="amount">
           <Form.Label>Cost</Form.Label>
           <Form.Control type="text" placeholder="Enter Amount" />
           <p></p>
         </Form.Group>
 
-        <Form.Group controlId="Type">
+        <Form.Group controlId="type">
           <Form.Label>Type</Form.Label>
           <br></br>
           <select>
-            <option value="PayPal">PayPal</option>
-            <option value="Credit">Credit</option>
-            <option selected value="Debit">
+            <option value="paypal">PayPal</option>
+            <option value="credit">Credit</option>
+            <option value="debit">
               Debit
             </option>
-            <option value="Cash">Cash</option>
+            <option value="cash">Cash</option>
           </select>
         </Form.Group>
         <Button variant="dark" type="submit">

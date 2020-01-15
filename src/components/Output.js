@@ -5,7 +5,9 @@ import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
-function Output() {
+function Output(props) {
+  console.log(props.expenses);
+
   return (
     <Container>
       <Jumbotron>
@@ -13,22 +15,22 @@ function Output() {
           <thead>
             <tr id="tableTitle">
               <th id="id">#</th>
-              <th id="Item">Item</th>
-              <th id="Date">Date</th>
-              <th id="Type">Type</th>
-              <th id="Amount">Amount</th>
+              <th id="item">Item</th>
+              <th id="date">Date</th>
+              <th id="type">Type</th>
+              <th id="amount">Amount</th>
               <th id="delete"></th>
             </tr>
           </thead>
           <tbody>
             <tr id="table">
               <td id="id">097</td>
-              <td id="Item">MIDI Keyboard</td>
-              <td id="Date">01/21/2020</td>
-              <td id="Type">Debit</td>
-              <td id="Amount">$92.89</td>
+              <td id="item">MIDI Keyboard</td>
+              <td id="date">01/21/2020</td>
+              <td id="type">Debit</td>
+              <td id="amount">$92.89</td>
               <td>
-                <input id="delete" input type="checkbox" />
+                <input id="delete" input type="checkbox" input="true" />
               </td>
             </tr>
             <tr>
