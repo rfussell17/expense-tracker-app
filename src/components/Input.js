@@ -32,9 +32,7 @@ function Input() {
           <select>
             <option value="paypal">PayPal</option>
             <option value="credit">Credit</option>
-            <option value="debit">
-              Debit
-            </option>
+            <option value="debit">Debit</option>
             <option value="cash">Cash</option>
           </select>
         </Form.Group>

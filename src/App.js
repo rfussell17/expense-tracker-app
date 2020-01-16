@@ -32,9 +32,10 @@ class App extends React.Component {
         }
       ]
     };
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
-  handleChange = e => {
+  handleChange() {
     this.setState({
       id: e.target.value,
       item: e.target.value,
@@ -42,14 +43,18 @@ class App extends React.Component {
       type: e.target.value,
       amount: e.target.value
     });
-  };
+  }
+
+  handleDelete() {
+    this.setState({});
+  }
 
   render() {
     return (
       <div className="App">
         <Header />
         <Input />
-        <Output expenses={this.state.expenses}/>
+        <Output expenses={this.state.expenses} />
         <Footer />
       </div>
     );
