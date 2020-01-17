@@ -6,8 +6,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
 
+
 function Output(props) {
   console.log(props.expenses);
+
+
 
   return (
     <Container>
