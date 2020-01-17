@@ -15,7 +15,7 @@ class App extends React.Component {
       date: "",
       type: "",
       amount: "",
-      expense: [
+      expenses: [
         {
           id: 1,
           item: "Table",
@@ -32,21 +32,6 @@ class App extends React.Component {
         }
       ]
     };
-    this.handleDelete = this.handleDelete.bind(this);
-  }
-
-  handleChange() {
-    this.setState({
-      id: e.target.value,
-      item: e.target.value,
-      date: e.target.value,
-      type: e.target.value,
-      amount: e.target.value
-    });
-  }
-
-  handleDelete() {
-    this.setState({});
   }
 
   render() {
