@@ -35,20 +35,11 @@ class App extends React.Component {
   }
 
   render() {
-    const expenses = this.state.expenses.map(output => {
-      return <Output expenses={
-        output.id,
-        output.item,
-        output.date,
-        output.type,
-        output.amount
-      }/>
-    })
     return (
       <div className="App">
         <Header />
         <Input />
-        <Output {...expenses}/>
+        <Output expenses={this.state.expenses} />
         <Footer />
       </div>
     );
