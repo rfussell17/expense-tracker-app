@@ -7,9 +7,7 @@ import Button from "react-bootstrap/Button";
 
 
 
-function Output(props) {
-  console.log(props.expenses);
-
+function Output() {
 
 
   return (
