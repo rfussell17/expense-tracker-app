@@ -25,8 +25,8 @@ function Input() {
 
         <Form.Group controlId="amount">
           <Form.Label>Cost</Form.Label>
-          <Form.Control type="text" placeholder="Enter Amount
-          onChange={this.handleChange}" />
+          <Form.Control type="text" placeholder="Enter Amount"
+          onChange={this.handleChange} />
           <p></p>
         </Form.Group>
 
