@@ -22,17 +22,26 @@ class App extends React.Component {
           date: "2019-01-15",
           type: "debit",
           amount: "22.50"
-        },
-        {
-          id: 2,
-          item: "Stable",
-          date: "2019-11-08",
-          type: "cash",
-          amount: "2.50"
         }
       ]
     };
   }
+
+  table(){
+    return this.state.expenses.map((expenses) => {
+      const { id, item, date, type, amount } = expenses
+      return (
+         <tr key={id}>
+            <td>{id}</td>
+            <td>{item}</td>
+            <td>{date}</td>
+            <td>{type}</td>
+            <td>{amount}</td>
+         </tr>
+      )
+   })
+}
+
 
 
 
@@ -41,7 +50,8 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Input />
-        <Output expenses={this.state.expenses} />
+        <Output expenses={this.state.expenses.table}
+        />
         <Footer />
       </div>
     );

@@ -12,28 +12,28 @@ function Input() {
         <Form.Group controlId="item">
           <Form.Label>Item</Form.Label>
           <Form.Control type="text" placeholder="Enter Item"
-          onChange={this.handleChange} />
+           />
           <p></p>
         </Form.Group>
 
         <Form.Group controlId="date">
           <Form.Label>Date</Form.Label>
           <Form.Control type="date" placeholder="Enter Date"
-          onChange={this.handleChange} />
+           />
           <p></p>
         </Form.Group>
 
         <Form.Group controlId="amount">
           <Form.Label>Cost</Form.Label>
           <Form.Control type="text" placeholder="Enter Amount"
-          onChange={this.handleChange} />
+           />
           <p></p>
         </Form.Group>
 
         <Form.Group controlId="type">
           <Form.Label>Type</Form.Label>
           <br></br>
-          <select onChange={this.handleChange}>
+          <select>
             <option value="paypal">PayPal</option>
             <option value="credit">Credit</option>
             <option value="debit">Debit</option>
