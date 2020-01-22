@@ -4,33 +4,49 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-
-function Input() {
+function Input(props) {
   return (
     <Container>
-      <Form>
+      <Form /*onSubmit={props.handleSubmit}*/>
         <Form.Group controlId="item">
           <Form.Label>Item</Form.Label>
-          <Form.Control type="text" placeholder="Enter Item"
-           />
-          <p></p>
+          <Form.Control
+            name="item"
+            type="text"
+           /* value={props.expenses.item}*/
+            placeholder="Enter Item"
+           /* onChange={props.handleChange}*/
+          />
         </Form.Group>
 
         <Form.Group controlId="date">
           <Form.Label>Date</Form.Label>
-          <Form.Control type="date" placeholder="Enter Date"
-           />
-          <p></p>
+          <Form.Control
+            name="date"
+            type="date"
+          /*  value={props.expense.date}*/
+            placeholder="Enter Date"
+           /* onChange={props.handleChange}*/
+          />
         </Form.Group>
 
         <Form.Group controlId="amount">
           <Form.Label>Cost</Form.Label>
-          <Form.Control type="text" placeholder="Enter Amount"
-           />
-          <p></p>
+          <Form.Control
+            name="amount"
+            type="text"
+          /*  value={props.expense.amount}*/
+            placeholder="Enter Amount"
+           /* onChange={props.handleChange}*/
+          />
         </Form.Group>
 
-        <Form.Group controlId="type">
+        <Form.Group
+          controlId="type"
+          name="type"
+        /*  value={props.expense.type}*/
+         /* onChange={props.handleChange}*/
+        >
           <Form.Label>Type</Form.Label>
           <br></br>
           <select>

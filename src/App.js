@@ -15,31 +15,21 @@ class App extends React.Component {
       date: "",
       type: "",
       amount: "",
-      expenses: [
-        {
-          id: 97,
-          item: "MIDI Keyboard",
-          date: "2020-01-15",
-          type: "debit",
-          amount: "22.50"
-        },
-        {
-          id: 98,
-          item: "Tv",
-          date: "2020-01-15",
-          type: "cash",
-          amount: "24.50"
-        },
-        {
-          id: 99,
-          item: "butt",
-          date: "2020-01-15",
-          type: "cash",
-          amount: "24.50"
-        }
-      ]
+      expenses: []
     };
+
+   /* this.handleChange = this.handleChange.bind(this);*/
+  /*  this.handleSubmit = this.handleSubmit.bind(this);*/
   }
+
+ /* handleChange(event) {
+    const { name, value } = event.target;
+    this.setState({expense});
+  }
+
+  handleSubmit(event){
+    event.preventDefault();
+  }*/
 
   render() {
     return (
