@@ -13,9 +13,9 @@ function Input(props) {
           <Form.Control
             name="item"
             type="text"
-           /* value={props.expenses.item}*/
+            value={props.item}
             placeholder="Enter Item"
-           /* onChange={props.handleChange}*/
+            onChange={props.handleChange}
           />
         </Form.Group>
 
@@ -24,9 +24,9 @@ function Input(props) {
           <Form.Control
             name="date"
             type="date"
-          /*  value={props.expense.date}*/
+            value={props.date}
             placeholder="Enter Date"
-           /* onChange={props.handleChange}*/
+            onChange={props.handleChange}
           />
         </Form.Group>
 
@@ -35,17 +35,17 @@ function Input(props) {
           <Form.Control
             name="amount"
             type="text"
-          /*  value={props.expense.amount}*/
+            value={props.amount}
             placeholder="Enter Amount"
-           /* onChange={props.handleChange}*/
+            onChange={props.handleChange}
           />
         </Form.Group>
 
         <Form.Group
           controlId="type"
           name="type"
-        /*  value={props.expense.type}*/
-         /* onChange={props.handleChange}*/
+          value={props.type}
+          onChange={props.handleChange}
         >
           <Form.Label>Type</Form.Label>
           <br></br>
