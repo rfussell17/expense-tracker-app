@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 class App extends React.Component {
   constructor() {
     super();
-    this.state.expenses.map = {
+    this.state = {
       id: "",
       item: "",
       date: "",
@@ -17,9 +17,9 @@ class App extends React.Component {
       amount: "",
       expenses: [
         {
-          id: 1,
-          item: "Table",
-          date: "2019-01-15",
+          id: 97,
+          item: "MIDI Keyboard",
+          date: "2020-01-15",
           type: "debit",
           amount: "22.50"
         }
@@ -51,7 +51,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Input />
-        <Output expenses={this.state.expenses.table}
+        <Output expenses={this.state.expenses}
         />
         <Footer />
       </div>

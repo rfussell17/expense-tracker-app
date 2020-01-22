@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 
 
 
-function Output() {
+function Output(props) {
 
 
   return (
@@ -26,11 +26,11 @@ function Output() {
           </thead>
           <tbody>
             <tr id="table">
-              <td id="id">097</td>
-              <td id="item">MIDI Keyboard</td>
-              <td id="date">01/21/2020</td>
-              <td id="type">Debit</td>
-              <td id="amount">$92.89</td>
+              <td id="id">{props.expenses[0].id}</td>
+              <td id="item">{props.expenses[0].item}</td>
+              <td id="date">{props.expenses[0].date}</td>
+              <td id="type">{props.expenses[0].type}</td>
+              <td id="amount">{props.expenses[0].amount}</td>
               <td>
                 <input id="delete" input type="checkbox" input="true" />
               </td>
