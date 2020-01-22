@@ -32,7 +32,7 @@ class App extends React.Component {
     event.preventDefault();
   }*/
 
-  render(props) {
+  render() {
     return (
       <div className="App">
         <Header />
