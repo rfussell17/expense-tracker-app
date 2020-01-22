@@ -5,10 +5,21 @@ import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
-
-
 function Output(props) {
-
+  const rows = props.expenses.map(function(expense) {
+    return (
+      <tr>
+        <td id="id">{expense.id}</td>
+        <td id="item">{expense.item}</td>
+        <td id="date">{expense.date}</td>
+        <td id="type">{expense.type}</td>
+        <td id="amount">{expense.amount}</td>
+        <td>
+          <input id="delete" input type="checkbox" input="true" />
+        </td>
+      </tr>
+    );
+  });
 
   return (
     <Container>
@@ -24,21 +35,7 @@ function Output(props) {
               <th id="delete"></th>
             </tr>
           </thead>
-          <tbody>
-            <tr id="table">
-              <td id="id">{props.expenses[0].id}</td>
-              <td id="item">{props.expenses[0].item}</td>
-              <td id="date">{props.expenses[0].date}</td>
-              <td id="type">{props.expenses[0].type}</td>
-              <td id="amount">{props.expenses[0].amount}</td>
-              <td>
-                <input id="delete" input type="checkbox" input="true" />
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-          </tbody>
+          <tbody>{rows}</tbody>
         </Table>
       </Jumbotron>
       <Button variant="dark" type="submit">
