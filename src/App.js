@@ -29,7 +29,7 @@ class App extends React.Component {
 
 /** 
   table(){
-    return this.state.expenses.map((expenses) => {
+    return this.state.expenses.map(() => {
       const { id, item, date, type, amount } = expenses
       return (
          <tr key={id}>
