@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
-
 function Output(props) {
   const rows = props.expenses.map(function(expense) {
     return (
@@ -16,11 +15,7 @@ function Output(props) {
         <td id="type">{expense.type}</td>
         <td id="amount">{expense.amount}</td>
         <td>
-          <input
-           id="delete"
-           type="checkbox"
-           
-            />
+          <input id="delete" type="checkbox" />
         </td>
       </tr>
     );
