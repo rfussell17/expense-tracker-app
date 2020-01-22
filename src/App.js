@@ -18,25 +18,30 @@ class App extends React.Component {
       expenses: []
     };
 
-   /* this.handleChange = this.handleChange.bind(this);*/
-  /*  this.handleSubmit = this.handleSubmit.bind(this);*/
+    this.handleChange = this.handleChange.bind(this);
+    /*this.handleSubmit = this.handleSubmit.bind(this);*/
   }
 
- /* handleChange(event) {
+  handleChange(event) {
     const { name, value } = event.target;
-    this.setState({expense});
+    this.setState({ expense });
   }
 
+  /* 
   handleSubmit(event){
     event.preventDefault();
   }*/
 
-  render() {
+  render(props) {
     return (
       <div className="App">
         <Header />
-        <Input />
-        <Output expenses={this.state.expenses} />
+        <Input handleChange={this.handleChange} {...this.state} />
+        <Output
+          expenses={this.state.expenses}
+          handleChange={this.handleChange}
+          {...this.state}
+        />
         <Footer />
       </div>
     );

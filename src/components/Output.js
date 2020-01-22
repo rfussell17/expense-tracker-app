@@ -43,7 +43,7 @@ function Output(props) {
           <tbody>{rows}</tbody>
         </Table>
       </Jumbotron>
-      <Button variant="dark" type="submit">
+      <Button variant="dark" type="submit" checked={false}>
         Delete
       </Button>
     </Container>
