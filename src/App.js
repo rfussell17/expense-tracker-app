@@ -10,12 +10,18 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      id: "",
       item: "",
       date: "",
       type: "",
       amount: "",
-      expenses: []
+      expenses: [
+        {
+          item: "Table",
+          date: "2019-02-12",
+          type: "Debit",
+          amount: "400.00"
+        }
+      ]
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -30,10 +36,9 @@ class App extends React.Component {
     });
   }
 
-  removeExpense(){
-    this.setState({
-      expenses: this.state.expenses.filter()
-    })
+  removeExpense(event) {
+    event.preventDefault();
+    console.log("delete clicked");
   }
 
   handleSubmit(event) {

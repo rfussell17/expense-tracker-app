@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import "./Output.css";
 
 function Output(props) {
+  const removeExpense = props.removeExpense;
   const rows = props.expenses.map(function(expense) {
     return (
       <tr>
@@ -15,7 +16,9 @@ function Output(props) {
         <td id="amount">${expense.amount}</td>
         <td id="type">{expense.type}</td>
         <td>
-          <input id="delete" type="checkbox"/>
+          <Button variant="dark" type="submit" onClick={removeExpense}>
+            Delete
+          </Button>
         </td>
       </tr>
     );
@@ -26,7 +29,7 @@ function Output(props) {
       <Jumbotron>
         <Table responsive>
           <thead>
-            <tr id="tableTitle">
+            <tr className="tableTitle">
               <th id="item">Item</th>
               <th id="date">Date</th>
               <th id="amount">Amount</th>
@@ -36,9 +39,6 @@ function Output(props) {
           <tbody>{rows}</tbody>
         </Table>
       </Jumbotron>
-      <Button variant="dark" type="submit">
-        Delete
-      </Button>
     </Container>
   );
 }
