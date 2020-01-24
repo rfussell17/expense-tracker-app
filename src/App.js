@@ -11,20 +11,12 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      id: uuid(),
       item: "",
       date: "",
       type: "",
       amount: "",
-      id: uuid(),
-      expenses: [
-        {
-          item: "Table",
-          date: "2019-02-12",
-          type: "Debit",
-          amount: "400.00",
-          id: uuid()
-        },
-      ]
+      expenses: []
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -34,20 +26,21 @@ class App extends React.Component {
   }
 
   gatherOutput(expense) {
-    
     this.setState({
       expenses: [...this.state.expenses, expense]
     });
   }
 
-  removeExpense(event) {
+  removeExpense() {
     event.preventDefault();
     console.log("delete clicked");
+    this.setState({ expense: "" });
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    this.gatherOutput(this.state);
+    /*this.gatherOutput(this.state);*/
+    this.gatherOutput({ ...this.state, id: uuid() });
     this.setState({ expense: "" });
   }
 
@@ -69,7 +62,7 @@ class App extends React.Component {
         <Output
           expenses={this.state.expenses}
           handleChange={this.handleChange}
-        removeExpense={this.removeExpense}
+          removeExpense={this.removeExpense}
         />
         <Footer />
       </div>
