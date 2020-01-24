@@ -21,55 +21,45 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.gatherOutput = this.gatherOutput.bind(this);
+    this.removeExpense = this.removeExpense.bind(this);
   }
 
-  gatherOutput(expense){
+  gatherOutput(expense) {
     this.setState({
       expenses: [...this.state.expenses, expense]
+    });
+  }
+
+  removeExpense(){
+    this.setState({
+      expenses: this.state.expenses.filter()
     })
   }
 
-  handleSubmit(event){
+  handleSubmit(event) {
     event.preventDefault();
     this.gatherOutput(this.state);
     this.setState({ expense: "" });
   }
-  
 
   handleChange(event) {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-    console.log('handle change')
+    console.log("handle change");
   }
-
-
-  /* 
-      this.handleChange = this.handleChange.bind(this);
-   /*   this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit(event){
-    alert(`expenses: ${this.state.id} ${this.state.item} ${this.state.date} ${this.state.type}
-    ${this.state.amount}`);
-  }
-
-  handleChange(event) {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
-  }
-  */
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Input handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}  
-        gatherOutput={this.gatherOutput} />
+        <Input
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          gatherOutput={this.gatherOutput}
+        />
         <Output
           expenses={this.state.expenses}
           handleChange={this.handleChange}
-         
         />
         <Footer />
       </div>

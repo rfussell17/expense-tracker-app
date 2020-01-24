@@ -43,14 +43,13 @@ function Input(props) {
           />
         </Form.Group>
 
-        <Form.Group controlId="type">
+        <Form.Group
+          controlId="type"
+          name="type"
+          value={props.type}
+          onChange={props.handleChange}
+        >
           <Form.Label>Type</Form.Label>
-          <Form.Control
-             name="type"
-             value={props.type}
-             onChange={props.handleChange}
-             defaultValue="paypal"
-             />
           <br></br>
           <select>
             <option value="paypal">PayPal</option>

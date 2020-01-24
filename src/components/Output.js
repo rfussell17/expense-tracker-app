@@ -12,10 +12,10 @@ function Output(props) {
       <tr>
         <td id="item">{expense.item}</td>
         <td id="date">{expense.date}</td>
+        <td id="amount">${expense.amount}</td>
         <td id="type">{expense.type}</td>
-        <td id="amount">{expense.amount}</td>
         <td>
-          <input id="delete" type="checkbox" />
+          <input id="delete" type="checkbox"/>
         </td>
       </tr>
     );
@@ -29,15 +29,14 @@ function Output(props) {
             <tr id="tableTitle">
               <th id="item">Item</th>
               <th id="date">Date</th>
-              <th id="type">Type</th>
               <th id="amount">Amount</th>
-              <th id="delete"></th>
+              <th id="type">Type</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>
         </Table>
       </Jumbotron>
-      <Button variant="dark" type="submit" checked={false}>
+      <Button variant="dark" type="submit">
         Delete
       </Button>
     </Container>
