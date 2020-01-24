@@ -4,10 +4,12 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+
 function Input(props) {
+
   return (
     <Container>
-      <Form /*onSubmit={props.handleSubmit}*/>
+      <Form onSubmit={this.handleSubmit}>
         <Form.Group controlId="item">
           <Form.Label>Item</Form.Label>
           <Form.Control

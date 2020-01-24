@@ -19,7 +19,11 @@ class App extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    /*this.handleSubmit = this.handleSubmit.bind(this);*/
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event){
+    alert( {expenses} )
   }
 
   handleChange(event) {
@@ -27,16 +31,29 @@ class App extends React.Component {
     this.setState({ [name]: value });
   }
 
+
   /* 
+      this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
   handleSubmit(event){
-    event.preventDefault();
-  }*/
+    alert(`expenses: ${this.state.id} ${this.state.item} ${this.state.date} ${this.state.type}
+    ${this.state.amount}`);
+  }
+
+  handleChange(event) {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  }
+  */
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Input handleChange={this.handleChange} {...this.state} />
+        <Input handleChange={this.handleChange}  {...this.state}
+        handleSubmit={this.handleSubmit}  {...this.state} />
         <Output
           expenses={this.state.expenses}
           handleChange={this.handleChange}
