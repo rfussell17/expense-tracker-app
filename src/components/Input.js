@@ -9,7 +9,7 @@ function Input(props) {
 
   return (
     <Container>
-      <Form onSubmit={this.handleSubmit}>
+      <Form /*onSubmit={this.handleSubmit}*/ >
         <Form.Group controlId="item">
           <Form.Label>Item</Form.Label>
           <Form.Control
