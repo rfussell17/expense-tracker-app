@@ -9,7 +9,7 @@ function Input(props) {
 
   return (
     <Container>
-      <Form /*onSubmit={this.handleSubmit}*/ >
+      <Form onSubmit={props.handleSubmit} >
         <Form.Group controlId="item">
           <Form.Label>Item</Form.Label>
           <Form.Control
@@ -43,13 +43,14 @@ function Input(props) {
           />
         </Form.Group>
 
-        <Form.Group
-          controlId="type"
-          name="type"
-          value={props.type}
-          onChange={props.handleChange}
-        >
+        <Form.Group controlId="type">
           <Form.Label>Type</Form.Label>
+          <Form.Control
+             name="type"
+             value={props.type}
+             onChange={props.handleChange}
+             defaultValue="paypal"
+             />
           <br></br>
           <select>
             <option value="paypal">PayPal</option>

@@ -4,12 +4,12 @@ import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
+import "./Output.css";
 
 function Output(props) {
   const rows = props.expenses.map(function(expense) {
     return (
       <tr>
-        <td id="id">{expense.id}</td>
         <td id="item">{expense.item}</td>
         <td id="date">{expense.date}</td>
         <td id="type">{expense.type}</td>
@@ -27,7 +27,6 @@ function Output(props) {
         <Table responsive>
           <thead>
             <tr id="tableTitle">
-              <th id="id">#</th>
               <th id="item">Item</th>
               <th id="date">Date</th>
               <th id="type">Type</th>
