@@ -5,19 +5,20 @@ import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import "./Output.css";
+import uuid from "uuid/v4";
 
 function Output(props) {
   const removeExpense = props.removeExpense;
   const rows = props.expenses.map(function(expense) {
     return (
-      <tr>
+      <tr key={expense.id}>
         <td id="item">{expense.item}</td>
         <td id="date">{expense.date}</td>
         <td id="amount">${expense.amount}</td>
         <td id="type">{expense.type}</td>
         <td>
           <Button variant="dark" type="submit" onClick={removeExpense}>
-            Delete
+            X
           </Button>
         </td>
       </tr>

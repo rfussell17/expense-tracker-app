@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import uuid from "uuid/v4";
 
 import Input from "./components/Input";
 import Header from "./components/Header";
@@ -14,13 +15,15 @@ class App extends React.Component {
       date: "",
       type: "",
       amount: "",
+      id: uuid(),
       expenses: [
         {
           item: "Table",
           date: "2019-02-12",
           type: "Debit",
-          amount: "400.00"
-        }
+          amount: "400.00",
+          id: uuid()
+        },
       ]
     };
 
@@ -31,6 +34,7 @@ class App extends React.Component {
   }
 
   gatherOutput(expense) {
+    
     this.setState({
       expenses: [...this.state.expenses, expense]
     });
@@ -65,6 +69,7 @@ class App extends React.Component {
         <Output
           expenses={this.state.expenses}
           handleChange={this.handleChange}
+        removeExpense={this.removeExpense}
         />
         <Footer />
       </div>
