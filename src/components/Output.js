@@ -32,7 +32,7 @@ function Output(props) {
       <Jumbotron>
         <Table responsive>
           <thead>
-            <tr key={rows.id}>
+            <tr>
               <th id="item">Item</th>
               <th id="date">Date</th>
               <th id="amount">Amount</th>

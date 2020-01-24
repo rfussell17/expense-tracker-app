@@ -34,8 +34,14 @@ class App extends React.Component {
   removeExpense(event) {
     event.preventDefault();
     console.log("delete clicked");
-    this.setState({ expenses: [...this.state.expenses.filter(expense =>
-      expense.id !== expense.id)]})
+    console.log(this.state.expenses);
+    this.setState({
+      expenses: this.state.expenses.filter(expense => {
+        console.log(expense.id);
+        console.log(expense.id);
+        return expense.id !== expense.id
+      })      
+    });
   }
 
   handleSubmit(event) {
@@ -47,7 +53,6 @@ class App extends React.Component {
   handleChange(event) {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-    console.log("handle change");
   }
 
   render() {
