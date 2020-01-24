@@ -11,11 +11,11 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      id: uuid(),
       item: "",
       date: "",
       type: "",
       amount: "",
+      id: uuid(),
       expenses: []
     };
 
@@ -31,15 +31,15 @@ class App extends React.Component {
     });
   }
 
-  removeExpense() {
+  removeExpense(event) {
     event.preventDefault();
     console.log("delete clicked");
-    this.setState({ expense: "" });
+    this.setState({ expenses: [...this.state.expenses.filter(expense =>
+      expense.id !== expense.id)]})
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    /*this.gatherOutput(this.state);*/
     this.gatherOutput({ ...this.state, id: uuid() });
     this.setState({ expense: "" });
   }
