@@ -31,15 +31,14 @@ class App extends React.Component {
     });
   }
 
-  removeExpense(event) {
-    event.preventDefault();
+  removeExpense(id) {
     console.log("delete clicked");
     console.log(this.state.expenses);
     this.setState({
-      expenses: this.state.expenses.filter(expense => {
+      expense: this.state.expenses.filter(expenses => {
         console.log(expense.id);
         console.log(expense.id);
-        return expense.id !== expense.id
+        return expenses.id !== id
       })      
     });
   }

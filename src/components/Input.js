@@ -31,7 +31,7 @@ function Input(props) {
         </Form.Group>
 
         <Form.Group controlId="amount">
-          <Form.Label>Cost</Form.Label>
+          <Form.Label>Amount</Form.Label>
           <Form.Control
             name="amount"
             type="text"
