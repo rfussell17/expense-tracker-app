@@ -13,7 +13,7 @@ class App extends React.Component {
     this.state = {
       item: "",
       date: "",
-      type: "",
+      location: "",
       amount: "",
       id: uuid(),
       expenses: []

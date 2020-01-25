@@ -14,7 +14,7 @@ function Output(props) {
         <td id="item">{expense.item}</td>
         <td id="date">{expense.date}</td>
         <td id="amount">${expense.amount}</td>
-        <td id="type">{expense.type}</td>
+        <td id="location">{expense.location}</td>
         <td>
           <Button 
            variant="dark"
@@ -36,7 +36,7 @@ function Output(props) {
               <th id="item">Item</th>
               <th id="date">Date</th>
               <th id="amount">Amount</th>
-              <th id="type">Type</th>
+              <th id="location">Location</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>

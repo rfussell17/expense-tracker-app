@@ -41,20 +41,15 @@ function Input(props) {
           />
         </Form.Group>
 
-        <Form.Group
-          controlId="type"
-          name="type"
-          value={props.type}
-          onChange={props.handleChange}
-        >
-          <Form.Label>Type</Form.Label>
-          <br></br>
-          <select>
-            <option value="paypal">PayPal</option>
-            <option value="credit">Credit</option>
-            <option value="debit">Debit</option>
-            <option value="cash">Cash</option>
-          </select>
+        <Form.Group controlId="location">
+          <Form.Label>Location</Form.Label>
+          <Form.Control
+            name="location"
+            type="text"
+            value={props.location}
+            placeholder="Where was the purchase made"
+            onChange={props.handleChange}
+          />
         </Form.Group>
         <Button variant="dark" type="submit">
           Submit
