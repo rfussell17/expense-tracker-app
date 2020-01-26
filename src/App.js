@@ -32,6 +32,7 @@ class App extends React.Component {
   }
 
   removeExpense(id, event) {
+    event.preventDefault()
     this.setState({
       expenses: this.state.expenses.filter(expense => {
         return expense.id !== id;
@@ -44,6 +45,10 @@ class App extends React.Component {
     event.preventDefault();
     console.log("after default")
     this.gatherOutput({ ...this.state, id: uuid() });
+    this.setState({
+      expense: { item: "", date: "", amount: "", location: "" }
+    });
+    console.log("after setState")
   }
 
   handleChange(event) {
