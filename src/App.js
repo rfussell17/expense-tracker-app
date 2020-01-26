@@ -31,22 +31,19 @@ class App extends React.Component {
     });
   }
 
-  removeExpense(id) {
-    console.log("delete clicked");
-    console.log(this.state.expenses);
+  removeExpense(id, event) {
     this.setState({
-      expense: this.state.expenses.filter(expenses => {
-        console.log(expense.id);
-        console.log(expense.id);
-        return expenses.id !== id
-      })      
+      expenses: this.state.expenses.filter(expense => {
+        return expense.id !== id;
+      })
     });
   }
 
   handleSubmit(event) {
+    console.log("before default")
     event.preventDefault();
+    console.log("after default")
     this.gatherOutput({ ...this.state, id: uuid() });
-    this.setState({ expense: "" });
   }
 
   handleChange(event) {

@@ -19,7 +19,7 @@ function Output(props) {
           <Button 
            variant="dark"
            type="submit" 
-           onClick={removeExpense}>
+           onClick={removeExpense.bind(this,expense.id)}>
             X
           </Button>
         </td>
