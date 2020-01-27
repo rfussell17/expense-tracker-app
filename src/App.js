@@ -19,8 +19,8 @@ class App extends React.Component {
       expenses: []
     };
 
+    this.handleSubmit = this.removeExpense.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.gatherOutput = this.gatherOutput.bind(this);
     this.removeExpense = this.removeExpense.bind(this);
   }
@@ -40,20 +40,20 @@ class App extends React.Component {
     });
   }
 
+
   handleSubmit(event) {
-    console.log("before default")
     event.preventDefault();
-    console.log("after default")
     this.gatherOutput({ ...this.state, id: uuid() });
     this.setState({
       expense: { item: "", date: "", amount: "", location: "" }
     });
-    console.log("after setState")
   }
 
   handleChange(event) {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
+    this.setState({
+      [event.target.id]: event.target.value
+    })
+
   }
 
   render() {
@@ -61,13 +61,13 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Input
+          expenses={this.state.expenses}
           handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
           gatherOutput={this.gatherOutput}
+          handleSubmit={this.handleSubmit}
         />
         <Output
           expenses={this.state.expenses}
-          handleChange={this.handleChange}
           removeExpense={this.removeExpense}
         />
         <Footer />

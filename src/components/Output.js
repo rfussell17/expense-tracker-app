@@ -13,7 +13,7 @@ function Output(props) {
       <tr key={expense.id}>
         <td id="item">{expense.item}</td>
         <td id="date">{expense.date}</td>
-        <td id="amount">${expense.amount}</td>
+        <td id="amount">{expense.amount}</td>
         <td id="location">{expense.location}</td>
         <td>
           <Button 
