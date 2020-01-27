@@ -41,6 +41,7 @@ class App extends React.Component {
 
 
   handleSubmit(event) {
+
     event.preventDefault();
     this.gatherOutput({ ...this.state, id: uuid() });
     this.setState({
