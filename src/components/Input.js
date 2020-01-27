@@ -5,7 +5,12 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 function Input(props) {
-  console.log(props);
+  
+  console.log(props.items);
+  console.log(props.item);
+  console.log(props.amount);
+  console.log(props.date);
+  console.log(props.location);
   return (
     <Container>
       <Form onSubmit={props.handleSubmit}>
@@ -14,7 +19,7 @@ function Input(props) {
           <Form.Control
             name="item"
             type="text"
-            value={props.item}
+            id={props.item}
             placeholder="Enter Item"
             onChange={props.handleChange}
           />
@@ -25,7 +30,7 @@ function Input(props) {
           <Form.Control
             name="date"
             type="date"
-            value={props.date}
+            id={props.date}
             placeholder="Enter Date"
             onChange={props.handleChange}
           />
@@ -36,7 +41,7 @@ function Input(props) {
           <Form.Control
             name="amount"
             type="text"
-            value={props.amount}
+            id={props.amount}
             placeholder="Enter Amount"
             onChange={props.handleChange}
           />
@@ -47,7 +52,7 @@ function Input(props) {
           <Form.Control
             name="location"
             type="text"
-            value={props.location}
+            id={props.location}
             placeholder="Where was the purchase made"
             onChange={props.handleChange}
           />

@@ -5,7 +5,6 @@ import uuid from "uuid/v4";
 import Input from "./components/Input";
 import Header from "./components/Header";
 import Output from "./components/Output";
-import Footer from "./components/Footer";
 
 class App extends React.Component {
   constructor() {
@@ -22,7 +21,6 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.gatherOutput = this.gatherOutput.bind(this);
-    console.log(this.handleSubmit)
   }
 
   gatherOutput(expense) {
@@ -68,8 +66,9 @@ class App extends React.Component {
           expenses={this.state.expenses}
           removeExpense={this.removeExpense}
           handleSubmit={this.handleSubmit}
+          handleChange={this.handleChange}
+          gatherOutput={this.gatherOutput}
         />
-        <Footer />
       </div>
     );
   }

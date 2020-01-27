@@ -14,7 +14,7 @@ Here is an Expense Tracker app I built with Reactjs, Bootstrap4, JSX as well as 
 
 **Author**
 <br>
-**Robin Fussell** _- Software Developer_ | [LinkedIn](https://www.linkedin.com/in/robin-fussell17/)
+**Robin Fussell** _- Software Developer_ | [LinkedIn](https://www.lingit kedin.com/in/robin-fussell17/)
 
 ## nano-react-app-template
 

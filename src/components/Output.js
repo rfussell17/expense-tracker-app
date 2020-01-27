@@ -4,7 +4,6 @@ import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import "./Output.css";
 
 function Output(props) {
   const removeExpense = props.removeExpense;
