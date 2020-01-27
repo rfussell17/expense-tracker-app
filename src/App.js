@@ -22,6 +22,7 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.gatherOutput = this.gatherOutput.bind(this);
+    console.log(this.handleSubmit)
   }
 
   gatherOutput(expense) {
