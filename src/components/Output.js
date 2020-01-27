@@ -16,10 +16,11 @@ function Output(props) {
         <td id="amount">{expense.amount}</td>
         <td id="location">{expense.location}</td>
         <td>
-          <Button 
-           variant="dark"
-           type="submit" 
-           onClick={removeExpense.bind(this,expense.id)}>
+          <Button
+            variant="dark"
+            type="submit"
+            onClick={removeExpense.bind(this, expense.id)}
+          >
             X
           </Button>
         </td>

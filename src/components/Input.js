@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 function Input(props) {
-  console.log(props)
+  console.log(props);
   return (
     <Container>
       <Form onSubmit={props.handleSubmit}>
