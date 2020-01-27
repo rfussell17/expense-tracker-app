@@ -18,11 +18,10 @@ class App extends React.Component {
       id: uuid(),
       expenses: []
     };
-
-    this.handleSubmit = this.removeExpense.bind(this);
+    this.removeExpense = this.removeExpense.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.gatherOutput = this.gatherOutput.bind(this);
-    this.removeExpense = this.removeExpense.bind(this);
   }
 
   gatherOutput(expense) {
@@ -69,6 +68,7 @@ class App extends React.Component {
         <Output
           expenses={this.state.expenses}
           removeExpense={this.removeExpense}
+          handleSubmit={this.handleSubmit}
         />
         <Footer />
       </div>
