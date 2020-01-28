@@ -52,13 +52,16 @@ class App extends React.Component {
     });
   }
 
-  render(props) {
+  render() {
     return (
       <div className="App">
         <Header />
         <Input
           expenses={this.state.expenses}
-
+          item = {this.state.expenses.item}
+          date = {this.state.expenses.date}
+          amount = {this.state.expenses.amount}
+          location = {this.state.expenses.location}
           handleChange={this.handleChange}
           gatherOutput={this.gatherOutput}
           handleSubmit={this.handleSubmit}

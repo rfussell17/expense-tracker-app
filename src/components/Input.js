@@ -5,12 +5,8 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 function Input(props) {
-  const expenses = {expenses}
-  console.log(props.expenses)
-  console.log(props.expenses.item);
-  console.log(props.expenses.amount);
-  console.log(props.expenses.date);
-  console.log(props.expenses.location);
+console.log
+
   return (
     <Container>
       <Form onSubmit={props.handleSubmit}>
