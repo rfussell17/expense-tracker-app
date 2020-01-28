@@ -52,12 +52,13 @@ class App extends React.Component {
     });
   }
 
-  render() {
+  render(props) {
     return (
       <div className="App">
         <Header />
         <Input
           expenses={this.state.expenses}
+
           handleChange={this.handleChange}
           gatherOutput={this.gatherOutput}
           handleSubmit={this.handleSubmit}
