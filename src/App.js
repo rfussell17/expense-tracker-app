@@ -7,8 +7,8 @@ import Header from "./components/Header";
 import Output from "./components/Output";
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       item: "",
       date: "",
@@ -21,6 +21,7 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.gatherOutput = this.gatherOutput.bind(this);
+
   }
 
   gatherOutput(expense) {
@@ -58,10 +59,6 @@ class App extends React.Component {
         <Header />
         <Input
           expenses={this.state.expenses}
-          item = {this.state.expenses.item}
-          date = {this.state.expenses.date}
-          amount = {this.state.expenses.amount}
-          location = {this.state.expenses.location}
           handleChange={this.handleChange}
           gatherOutput={this.gatherOutput}
           handleSubmit={this.handleSubmit}
