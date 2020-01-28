@@ -5,7 +5,10 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 function Input(props) {
-console.log
+console.log(props.item)
+console.log(props.date)
+console.log(props.amount)
+console.log(props.location)
 
   return (
     <Container>
