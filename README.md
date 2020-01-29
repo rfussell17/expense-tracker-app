@@ -2,9 +2,8 @@
 
 Keep track of where your hard earned money goes with this expense tracker app.
 
- <img src="src/images/frontend2.png"   title="HTML5 Powered"> <img src="src/images/heroku5.png"> <img src="src/images/react3.png">
+ <img src="/images/frontend2.png"   title="HTML5 Powered"> <img src="/images/heroku5.png"> <img src="/images/react3.png">
 
- Try it out here: [Expense-Tracker](https://rfussell17.github.io/expense-tracker-app/)
 
  <br>
 
@@ -12,7 +11,7 @@ Keep track of where your hard earned money goes with this expense tracker app.
 
 Here is an Expense Tracker app I built with Reactjs, Bootstrap4, JSX as well as JS, HTML & CSS. It's Launched using Heroku. I opted to use the nano-react-app template to keep the file structure lighter than create-react-app. This app lets you keep track of expenses by entering information into the text inputs, and displays the expenses in a table where you can view them, or delete them.
 
-<img src="src/images/expense.png"   title="expense">
+<img src="/images/expense.png"   title="expense">
 
 **Author**
 <br>
