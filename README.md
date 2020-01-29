@@ -4,7 +4,7 @@ Keep track of where your hard earned money goes with this expense tracker app.
 
  <img src="images/frontend2.png"   title="HTML5 Powered"> <img src="images/heroku5.png"> <img src="images/react3.png">
 
- Try it out here: [Pomodoro Timer](https://rfussell17.github.io/expense-tracker-app/)
+ Try it out here: [Expense-Tracker](https://rfussell17.github.io/expense-tracker-app/)
 
  <br>
 
