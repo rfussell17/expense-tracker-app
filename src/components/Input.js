@@ -14,7 +14,7 @@ function Input(props) {
           <Form.Label>Item</Form.Label>
           <Form.Control
             name="item"
-            type="text"
+            type="text" required
             value={props.item}
             placeholder="Enter Item"
             onChange={props.handleChange}
@@ -25,7 +25,7 @@ function Input(props) {
           <Form.Label>Date</Form.Label>
           <Form.Control
             name="date"
-            type="date"
+            type="date" required
             value={props.date}
             placeholder="Enter Date"
             onChange={props.handleChange}
@@ -36,7 +36,7 @@ function Input(props) {
           <Form.Label>Amount</Form.Label>
           <Form.Control
             name="amount"
-            type="text"
+            type="text" required
             value={props.amount}
             placeholder="Enter Amount"
             onChange={props.handleChange}
@@ -47,7 +47,7 @@ function Input(props) {
           <Form.Label>Location</Form.Label>
           <Form.Control
             name="location"
-            type="text"
+            type="text" required
             value={props.location}
             placeholder="Where was the purchase made"
             onChange={props.handleChange}
