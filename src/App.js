@@ -1,5 +1,4 @@
 import React from "react";
-import "./components/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import uuid from "uuid/v4";
 
 import Input from "./components/Input";
