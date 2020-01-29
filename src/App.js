@@ -21,7 +21,6 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.gatherOutput = this.gatherOutput.bind(this);
-
   }
 
   gatherOutput(expense) {
@@ -43,7 +42,7 @@ class App extends React.Component {
     event.preventDefault();
     this.gatherOutput({ ...this.state, id: uuid() });
     this.setState({
-      expense: { item: "", date: "", amount: "", location: "" }
+      item: "", date: "", amount: "", location: ""
     });
   }
 
@@ -59,9 +58,14 @@ class App extends React.Component {
         <Header />
         <Input
           expenses={this.state.expenses}
+          item={this.state.item}
+          date={this.state.date}
+          amount={this.state.amount}
+          location={this.state.location}
           handleChange={this.handleChange}
           gatherOutput={this.gatherOutput}
           handleSubmit={this.handleSubmit}
+
         />
         <Output
           expenses={this.state.expenses}
