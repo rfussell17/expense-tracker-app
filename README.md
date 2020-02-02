@@ -1,4 +1,4 @@
-## Expense Tracker App - (In Progress)
+## Expense Tracker App
 
 Keep track of where your hard earned money goes with this expense tracker app.
 
