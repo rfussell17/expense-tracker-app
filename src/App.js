@@ -1,9 +1,12 @@
 import React from "react";
 import uuid from "uuid/v4";
 
-import Input from "./components/Input";
+import Container from "react-bootstrap/Container";
+import Jumbotron from "react-bootstrap/Jumbotron";
+
+import ExpenseForm from "./components/ExpenseForm";
 import Header from "./components/Header";
-import Output from "./components/Output";
+import ExpenseTable from "./components/ExpenseTable";
 
 class App extends React.Component {
   constructor(props) {
@@ -58,23 +61,29 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Input
-          expenses={this.state.expenses}
-          item={this.state.item}
-          date={this.state.date}
-          amount={this.state.amount}
-          location={this.state.location}
-          handleChange={this.handleChange}
-          gatherOutput={this.gatherOutput}
-          handleSubmit={this.handleSubmit}
-        />
-        <Output
-          expenses={this.state.expenses}
-          removeExpense={this.removeExpense}
-          handleSubmit={this.handleSubmit}
-          handleChange={this.handleChange}
-          gatherOutput={this.gatherOutput}
-        />
+        <Container>
+          <ExpenseForm
+            expenses={this.state.expenses}
+            item={this.state.item}
+            date={this.state.date}
+            amount={this.state.amount}
+            location={this.state.location}
+            handleChange={this.handleChange}
+            gatherOutput={this.gatherOutput}
+            handleSubmit={this.handleSubmit}
+          />
+        </Container>
+        <Container>
+          <Jumbotron>
+            <ExpenseTable
+              expenses={this.state.expenses}
+              removeExpense={this.removeExpense}
+              handleSubmit={this.handleSubmit}
+              handleChange={this.handleChange}
+              gatherOutput={this.gatherOutput}
+            />
+          </Jumbotron>
+        </Container>
       </div>
     );
   }

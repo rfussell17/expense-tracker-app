@@ -1,11 +1,9 @@
 import React from "react";
-import Jumbotron from "react-bootstrap/Jumbotron";
 import Table from "react-bootstrap/Table";
-import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
-function Output(props) {
+function ExpenseTable(props) {
   const removeExpense = props.removeExpense;
   const rows = props.expenses.map(function(expense) {
     return (
@@ -28,22 +26,18 @@ function Output(props) {
   });
 
   return (
-    <Container>
-      <Jumbotron>
-        <Table responsive>
-          <thead>
-            <tr>
-              <th id="item">Item</th>
-              <th id="date">Date</th>
-              <th id="amount">Amount</th>
-              <th id="location">Location</th>
-            </tr>
-          </thead>
-          <tbody>{rows}</tbody>
-        </Table>
-      </Jumbotron>
-    </Container>
+    <Table responsive>
+      <thead>
+        <tr>
+          <th id="item">Item</th>
+          <th id="date">Date</th>
+          <th id="amount">Amount</th>
+          <th id="location">Location</th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </Table>
   );
 }
 
-export default Output;
+export default ExpenseTable;
